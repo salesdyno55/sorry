@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Samahani Mpenzi Wangu ❤️</title>
+
+<style>
+• {
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+min-height: 100vh;
+font-family: Arial, sans-serif;
+background: linear-gradient(135deg, #ff758c, #ffb199, #ffc3a0);
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 18px;
+overflow-x: hidden;
+color: #512638;
+}
+
+.card {
+width: 100%;
+max-width: 430px;
+background: rgba(255,255,255,0.96);
+border-radius: 26px;
+padding: 28px 22px;
+text-align: center;
+box-shadow: 0 15px 45px rgba(100,0,30,0.18);
+position: relative;
+z-index: 2;
+}
+
+.heart {
+font-size: 60px;
+animation: beat 1.2s infinite;
+}
+
+@keyframes beat {
+0%, 100% { transform: scale(1); }
+50% { transform: scale(1.15); }
+}
+
+h1 {
+color: #e84370;
+font-size: 27px;
+margin: 12px 0;
+}
+
+p {
+font-size: 16px;
+line-height: 1.8;
+}
+
+.buttons {
+display: flex;
+justify-content: center;
+gap: 12px;
+flex-wrap: wrap;
+margin-top: 25px;
+}
+
+button {
+border: none;
+padding: 14px 21px;
+border-radius: 30px;
+font-size: 16px;
+font-weight: bold;
+cursor: pointer;
+transition: 0.2s;
+}
+
+.yes {
+background: #e84370;
+color: white;
+}
+
+.no {
+background: #eee;
+color: #555;
+}
+
+button:active {
+transform: scale(0.96);
+}
+
+.page {
+display: none;
+}
+
+.page.active {
+display: block;
+animation: appear 0.5s ease;
+}
+
+@keyframes appear {
+from { opacity: 0; transform: translateY(15px); }
+to { opacity: 1; transform: translateY(0); }
+}
+
+.apology {
+text-align: left;
+background: #fff4f6;
+padding: 16px;
+border-radius: 18px;
+margin-top: 18px;
+}
+
+.whatsapp {
+display: block;
+margin-top: 22px;
+background: #25D366;
+color: white;
+text-decoration: none;
+padding: 16px 12px;
+border-radius: 30px;
+font-weight: bold;
+font-size: 16px;
+line-height: 1.5;
+}
+
+.small {
+font-size: 13px;
+color: #8c6a77;
+margin-top: 18px;
+}
+
+.floating {
+position: fixed;
+bottom: -30px;
+animation: floatUp 7s linear infinite;
+opacity: 0.7;
+pointer-events: none;
+}
+
+@keyframes floatUp {
+from { transform: translateY(0) rotate(0); opacity: 0; }
+20% { opacity: 0.7; }
+to { transform: translateY(-110vh) rotate(360deg); opacity: 0; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<!-- UKURASA WA KWANZA -->
+<section class="page active" id="page1">
+<div class="heart">❤️</div>
+<h1>Mpenzi Wangu</h1>
+<p>Je, unampenda <b>DENIS MWITA</b>? 🥹❤️</p>
+
+<div class="buttons">
+<button class="yes" onclick="nextPage(2)">NDIYO ❤️</button>
+<button class="no" id="no1">HAPANA 🙈</button>
+</div>
+<p class="small">Nina jambo muhimu nataka kukuambia. 💌</p>
+</section>
+
+<!-- UKURASA WA PILI -->
+<section class="page" id="page2">
+<div class="heart">💍</div>
+<h1>Swali Lingine, Mpenzi</h1>
+<p>Je, upo tayari kuwa mwanamke wa maisha yangu? ❤️🥰</p>
+
+<div class="buttons">
+<button class="yes" onclick="nextPage(3)">NDIYO ❤️</button>
+<button class="no" id="no2">HAPANA 🙈</button>
+</div>
+<p class="small">Tafadhali nisikilize kwa moyo wako. 💗</p>
+</section>
+
+<!-- UKURASA WA MWISHO -->
+<section class="page" id="page3">
+<div class="heart">🥹❤️</div>
+<h1>Naomba Unisamehe, Mpenzi Wangu</h1>
+
+<div class="apology">
+<p>Mpenzi wangu ❤️🥹,</p>
+
+<p>
+Naomba unisamehe kwa yote niliyokufanyia na kwa mambo mengi
+ambayo nimekuwa nikikukwaza. Najua kuna nyakati nimekuumiza
+na kukufanya ujisikie vibaya, na kwa hilo naomba unisamehe
+kwa moyo wangu wote. 😔❤️
+</p>
+
+<p>
+Natambua makosa yangu, na sitaki maneno yangu yawe ahadi tu.
+Nataka nikuonyeshe kwa matendo kwamba nimejifunza kutokana
+na makosa yangu na nitajitahidi kutoyarudia tena.
+</p>
+
+<p>
+Nakupenda leo, kesho na milele. ❤️💍 Wewe ndiye mwanamke
+ninayetamani kuwa naye maishani mwangu. Sitamani wala
+sitaki kukupoteza, kwa sababu una nafasi ya pekee sana
+moyoni mwangu.
+</p>
+
+<p>
+Tafadhali nisamehe, mpenzi wangu, kwa yote niliyokufanyia
+na kwa kila jambo lililokuumiza. Naomba unipe nafasi ya
+kurekebisha makosa yangu na kuthibitisha upendo wangu
+kwa matendo. ❤️🌹
+</p>
+
+<p><b>Wako kwa upendo, DENIS MWITA ❤️</b></p>
+</div>
+
+<p>
+Ukishasoma ujumbe wangu, unaweza kubonyeza hapa chini
+kunijibu kupitia WhatsApp. 💌
+</p>
+
+<a class="whatsapp" id="whatsappBtn"
+href="https://wa.me/255687761212"
+target="_blank" rel="noopener">
+Sawa, nimekusamehe mpenzi ❤️🥹
+</a>
+
+<p class="small">
+❤️ Ujumbe wako wa WhatsApp utakuwa tayari kuutuma.
+Unaweza kuusoma kabla ya kubonyeza Send. ❤️
+</p>
+</section>
+
+</div>
+
+<script>
+function nextPage(number) {
+document.querySelectorAll(".page").forEach(page => {
+page.classList.remove("active");
+});
+
+document.getElementById("page" + number).classList.add("active");
+window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+// Kitufe cha HAPANA kinajiepusha na kubonyezwa
+function dodgeButton(id) {
+const button = document.getElementById(id);
+
+function moveButton() {
+const maxX = Math.max(0, window.innerWidth - button.offsetWidth - 20);
+const maxY = Math.max(0, window.innerHeight - button.offsetHeight - 20);
+
+button.style.position = "fixed";
+button.style.left = Math.random() * maxX + "px";
+button.style.top = Math.random() * maxY + "px";
+button.style.zIndex = "10";
+}
+
+button.addEventListener("mouseenter", moveButton);
+button.addEventListener("touchstart", function(event) {
+event.preventDefault();
+moveButton();
+}, { passive: false });
+button.addEventListener("click", function(event) {
+event.preventDefault();
+moveButton();
+});
+}
+
+dodgeButton("no1");
+dodgeButton("no2");
+
+// Ujumbe wa kukusamehe unaoonekana tayari kwenye WhatsApp
+const message =
+"Sawa, nimekusamehe mpenzi wangu ❤️🥹. " +
+"Najua kila mtu anaweza kukosea, na ninathamini kwamba " +
+"umetambua makosa yako na kuomba msamaha. Naomba tu " +
+"usirudie tena mambo ambayo yananiumiza, kwa sababu " +
+"hisia zangu ni muhimu pia. Natamani tuendelee kupendana, " +
+"kuelewana na kuheshimiana. Nitakupa nafasi nyingine, " +
+"lakini naomba nione mabadiliko yako kwa vitendo, " +
+"si kwa maneno pekee. Nakupenda, mpenzi wangu. ❤️🫂💍";
+
+document.getElementById("whatsappBtn").href =
+"https://wa.me/255687761212?text=" + encodeURIComponent(message);
+
+// Mioyo inayopaa
+function createHeart() {
+const heart = document.createElement("div");
+heart.className = "floating";
+heart.textContent = ["❤️", "💗", "💕", "💖", "🥹"][Math.floor(Math.random() * 5)];
+heart.style.left = Math.random() * 100 + "vw";
+heart.style.fontSize = (18 + Math.random() * 22) + "px";
+heart.style.animationDuration = (5 + Math.random() * 5) + "s";
+
+document.body.appendChild(heart);
+
+setTimeout(() => heart.remove(), 10000);
+}
+
+setInterval(createHeart, 700);
+</script>
+
+</body>
+</html>
